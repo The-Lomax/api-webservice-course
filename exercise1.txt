@@ -1,0 +1,21 @@
+API exercise 1 - What is an API by examples.
+
+1) VIBER message using cell phone:
+    (A)pplication - viber messaging service
+    (P)rogramming - message sending program
+    (I)nterface - viber app on mobile phones
+
+2) Google search using computer:
+    (A)pplication - GOogle search
+    (P)rogramming - Search query engine
+    (I)nterface - Search webpage in the browser
+
+3) Create orders in eBay when you get them (no browser):
+    (A)pplication - eBay
+    (P)rogramming - order creating service
+    (I)nterface - eBay (via API http requests)
+
+4) Create orders in SAP when you get them (no browser):
+    (A)pplication - SAP
+    (P)rogramming - order creation service
+    (I)nterface - SAP

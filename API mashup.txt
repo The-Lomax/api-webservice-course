@@ -1,0 +1,4 @@
+API mashup - creating APIs from other APIs.
+
+example - booking sites, running searching programs when requested, with requested information, 
+calling APIs from other vendors (flights, buses, trains etc, hotels, hostels etc), getting required search results.

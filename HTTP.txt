@@ -1,0 +1,40 @@
+HTTP (Hyper Text Transmit Protocol) - communication protocol used to transmit the data over the internet.
+transmits the data in plain text.
+not safe, compared to HTTPS, data transmitted is not encrypted.
+
+HTTP request content:
+    1) start line (http version, method - GET(get information), POST(create information), PUT(update information), DELETE(remove information), folders and parameters)
+    2) headers (host, token, )
+    3) blank line (separates headers from the body)
+    4) body (request parameters(usernames, passwords, content, etc))
+
+HTTP response content:
+    1) start line (http version, status code, )
+    2) headers (cookie, response size, response type, )
+    3) blank line (separates headers from the body)
+    4) body (content of the requested information(resources, objects, web objects, web pages, etc))
+
+HTTP idempotence - The method can be repeated as many times as you want, and the result will always remain the same.
+    1) GET - YES (retrieving information is safe)
+    2) POST - NO (creating a record over and over again should not be allowed)
+    3) PUT - YES (the same change applied to item over and over again is not a problem)
+    4) DELETE - YES (you can delete as many times as you want, the same resource cannot be deleted twice anyway)
+
+Example HTTP request headers:
+    - accept language
+    - authorisation
+    - cache control
+    - content type
+    - cookie
+    - date
+    - host
+
+Example HTTP response headers:
+    - cache control
+    - content language
+    - content type
+    - date
+    - expires
+    - set cookie
+    - server name
+

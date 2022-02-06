@@ -1,0 +1,12 @@
+XML - eXtensible Markup Language
+
+defined by HTTP header line: content-type: application/xml
+HTTP body: XML
+
+XML uses tags <> just like HTML, but the meaning of the tags is different and the types of the tags change.
+
+W3C created XML and HTML (probably that's where the similarity comes from)
+
+XML schema defines a layout of the correctly formatted XML, for a particular service.
+Schemas ensure that as long as the XML file is following the rules laid out in the schema document,
+the service will work correctly. Otherwise it will return an error.

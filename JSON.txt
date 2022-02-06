@@ -1,0 +1,15 @@
+JSON - JavaScript Object Notation.
+Data format used in many different programming technologies.
+Enables and promotes cross-platform compatibility, due to being able to be parsed by different programming languages and applications.
+Applications make use of JSON Parsers to process information from and to the JSON format, to be able to transfer data to the applications in the internet, 
+and to convert the JSON responses to data objects.
+
+Defined by HTTP header line: Content-Type: application/json
+
+HTTP body is written in JSON format.
+
+Uses key-value pairs
+
+example: {"name":"Chris","age":"31"}
+
+Created by Douglas Crockford

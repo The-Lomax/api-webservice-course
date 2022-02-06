@@ -1,0 +1,8 @@
+REST - Representational State Transfer.
+Bases its structure on object data.
+Can use all API methods (get put post delete).
+Can use all data types.
+Created by Roy Fielding in 2001.
+Cross platform compatible.
+
+Principal of REST is that you don't work on the actual resource but on the representation of it.

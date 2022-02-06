@@ -1,0 +1,19 @@
+API functioning process:
+1) REQUEST is being made by the interface (can be a client application sending a request to the program)
+2) Program is ran in the application to PROCESS the request
+3) Application sends back RESPONSE with the requested information (or result of information processing, depending on the request type)
+
+example:
+1. user types in keyword to search in Google
+2. user clicks search
+3. search engine sends a search query request to google program to return search results
+4. program located at google is being ran to process the information
+5. application at google is returning the search results back to the interface
+
+example:
+1. user sends a HTTP request directly to the application to create an order
+2. the order related information is included with the request
+3. application interface runs the program at ebay that creates an order
+4. order creation program is ran to create the requested order
+5. application at ebay sends back the result of creating the program back to the interface (can be UI), containing success/failure and/or the orderID and/or other information
+

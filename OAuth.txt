@@ -1,0 +1,65 @@
+OAuth - Other Authorisation, is a module that allows authenticated authorisation to third parties to have limited (authorised) access to our resources.
+
+It introduces authorisation layer
+
+Instead of providing credentials to third party apps and services, OAuth issues an authorised access token, that allows for limited access to resources.
+
+Must use HTTP.
+
+ROLES IN OAUTH:
+    1) Resource owner - has full administrative access to resources
+    2) Resource server - manages providing the resources when given valid access token
+    3) Client/Application - provides the access token, when accessing resources
+    4) Authorisation server - manages providing authenticated, authorized access to the resources on the web server you own based on validity of the access tokens.
+
+Example OAuth process:
+    1. client contacts auth server for token
+    2. server issues the token after authenticating the client
+    3. client goes back to resource server for resource
+    4. resource server provides resource, given on valid access token
+
+OAuth 2.0 Process: (THESE MUST HAPPEN IN ORDER)
+    a) Client issues authorisation request to the resources owner
+    b) Resource owner grants authorized (limited) access to the resources
+    c) Client sends the authorization grant to the authorisation server
+    d) Authorisation server sends back access token, based on validity of the access grant
+    e) Client requests the resource from the Resource Server using the access token
+    f) Resources server provides the authorised (limited) access to the resource based on validity of the access token
+
+Authorization grant types:
+    - authorisation code (resource owner grants access personally)
+    - implicit (access being requested by third party)
+    - resource owner (has administrative access to resource and ability to provide access to third parties)
+    - client credentials (access is granted automatically based on user credentials, without the necessity to ask for access)
+
+ACCESS TOKENS TYPES:
+    1. Access token - provides access to the resources. Has limited time validity.
+    2. Refresh token - allows to obtain new access code. Must have longer lifespan than access token.
+
+OAUTH 2.0 AUTHORISATION CODE GRANT FLOW:
+    1. User registers with the Authorisation server via the client and obtains the Client ID
+    2. Client sends the Client ID and redirection URI to the Authorisation server.
+    3. if the user is not logged in, user needs to authenticate
+    4. if the user is logged in on the authorisation server, the server issues the authorisation code back to the client, together with the redirect URI
+    5. Client sends the authorisation code and redirect URI to the authorisation server
+    6. Authorisation server sends back the access token (and optionally the refresh token), provided the authorisation code checks out.
+
+CLIENT REGISTRATION:
+    1. Client sends the HTTP request to the Auth Server with the following:
+        - Client type (native apps are public or web apps are confidential)
+        - Redirect URL
+        - Client secret
+        - Additional info as required (name, website, email, login etc)
+    2. Auth server sends back HTTP response to client with:
+        - Client ID,
+        - Client secret
+
+AUTHORIZATION REQUEST:
+    User clicks HTTP link to auth endpoint.
+    HTTP request:
+        - response type = code
+        - client id,
+        - redirect URI,
+        - scope of the permission of access to resources,
+        - optional client secret
+    

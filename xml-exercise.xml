@@ -1,0 +1,26 @@
+<Album>
+    <Name>Valley of the Damned</Name>
+    <Year>2003</Year>
+    <Songs>
+        <Song>
+            <Number>1</Number>
+            <Name>Invocation of Apocalyptic Evil</Name>
+            <Length>2:34</Length>
+        </Song>
+        <Song>
+            <Number>2</Number>
+            <Name>Valley of the Damned</Name>
+            <Length>4:56</Length>
+        </Song>
+        <Song>
+            <Number>3</Number>
+            <Name>Black Fire</Name>
+            <Length>5:23</Length>
+        </Song>
+        <Song>
+            <Number>4</Number>
+            <Name>Black Winter Nights</Name>
+            <Length>4:14</Length>
+        </Song>
+    </Songs>
+</Album>

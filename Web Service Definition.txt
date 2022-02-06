@@ -1,0 +1,12 @@
+What is a web service?
+    web - internet
+    service - API
+
+    together - web service - API that uses the internet.
+
+All webservices are APIs. Not all APIs are web services. 
+Only the ones that use the internet are web services.
+
+Web services use:
+    - XML or JSON to format data transferred across the internet and different technologies
+    - REST, SOAP or XML/RPC protocols to transfer the data

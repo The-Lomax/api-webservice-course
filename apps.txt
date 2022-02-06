@@ -1,0 +1,4 @@
+Types of apps:
+    1) native apps - apps that run in the operating system. the app has access to the OS APIs. It must be OS specific App, as it is working within the operating system.
+    2) web apps - apps that run on the web. work based on web API calls. platform-independent, can be used by different platforms and technologies. limited to the browsers capabilities.
+    3) hybrid apps - connects both funtionalilites of web and native apps.

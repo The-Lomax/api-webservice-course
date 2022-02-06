@@ -1,0 +1,13 @@
+SOAP - Simple Object Access Protocol.
+
+It is one of the ways to access web services.
+Rules to form HTTP request or response.
+Uses a WSDL (Web Services Description Language).
+
+4 HTTP request parts are defined by SOAP:
+    - Start line - POST WSDL HTTP Version
+    - Header line - Content-Type: text/xml
+    - Blank line
+    - Body - XML envelope formed using WSDL
+
+SOAP uses XML. W3C created SOAP.

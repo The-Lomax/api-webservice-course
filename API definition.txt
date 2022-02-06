@@ -1,0 +1,1 @@
+API - Application programming interface - is a way (interface) to tell a Program, to run in an Application
